@@ -1,0 +1,6 @@
+extends ../layouts/application
+block content
+  h2 clients/index.jade
+  h1= headline
+  each client in clients
+    p= client.company
