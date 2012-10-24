@@ -2,3 +2,7 @@ extends form
 prepend content
   h2 clients/new.jade
   h1= headline
+  form(method='post')
+    label.control-label(for='company') Company
+    .controls
+      input(type='text',name='company',placeholder='Company',value='#{myclient.company}')
