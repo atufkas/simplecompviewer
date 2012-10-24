@@ -3,7 +3,8 @@ var mongoose = require("mongoose")
 
 exports.new = function (req, res) {
     res.render("clients/new", {
-        headline: "New Client"
+        headline: "New Client",
+        client: new Client({})
     })
 }
 
